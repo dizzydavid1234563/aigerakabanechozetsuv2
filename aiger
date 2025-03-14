@@ -720,9 +720,6 @@ Anim:AdjustSpeed(0)
 Anim.TimePosition = startTime
 
 Anim:AdjustSpeed(1.5) -- [[speed of the move anim]]
-
-
-
     end
 
 end
