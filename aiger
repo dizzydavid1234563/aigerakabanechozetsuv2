@@ -1,0 +1,915 @@
+-- [[MOVES NAME]]
+
+local player = game.Players.LocalPlayer
+
+local playerGui = player.PlayerGui
+
+local hotbar = playerGui:FindFirstChild("Hotbar")
+
+local backpack = hotbar:FindFirstChild("Backpack")
+
+local hotbarFrame = backpack:FindFirstChild("Hotbar")
+
+local baseButton = hotbarFrame:FindFirstChild("1").Base
+
+local ToolName = baseButton.ToolName
+
+
+ToolName.Text = "slashes"
+
+
+--[[Move 2]]
+local player = game.Players.LocalPlayer
+
+local playerGui = player.PlayerGui
+
+local hotbar = playerGui:FindFirstChild("Hotbar")
+
+local backpack = hotbar:FindFirstChild("Backpack")
+
+local hotbarFrame = backpack:FindFirstChild("Hotbar")
+
+local baseButton = hotbarFrame:FindFirstChild("2").Base
+
+local ToolName = baseButton.ToolName
+
+
+ToolName.Text = "slam"
+
+
+--[[Move 3]]
+local player = game.Players.LocalPlayer
+
+local playerGui = player.PlayerGui
+
+local hotbar = playerGui:FindFirstChild("Hotbar")
+
+local backpack = hotbar:FindFirstChild("Backpack")
+
+local hotbarFrame = backpack:FindFirstChild("Hotbar")
+
+local baseButton = hotbarFrame:FindFirstChild("3").Base
+
+local ToolName = baseButton.ToolName
+
+
+ToolName.Text = "choke hold"
+
+
+--[[Move 4]]
+local player = game.Players.LocalPlayer
+
+local playerGui = player.PlayerGui
+
+local hotbar = playerGui:FindFirstChild("Hotbar")
+
+local backpack = hotbar:FindFirstChild("Backpack")
+
+local hotbarFrame = backpack:FindFirstChild("Hotbar")
+
+local baseButton = hotbarFrame:FindFirstChild("4").Base
+
+local ToolName = baseButton.ToolName
+
+
+ToolName.Text = "counter"
+
+
+--[[Ultimate Name]]
+local Players = game:GetService("Players")
+
+local player = Players.LocalPlayer
+
+local playerGui = player:WaitForChild("PlayerGui")
+
+
+local function findGuiAndSetText()
+
+    local screenGui = playerGui:FindFirstChild("ScreenGui")
+
+    if screenGui then
+
+        local magicHealthFrame = screenGui:FindFirstChild("MagicHealth")
+
+        if magicHealthFrame then
+
+            local textLabel = magicHealthFrame:FindFirstChild("TextLabel")
+
+            if textLabel then
+
+                textLabel.Text = "Ultimate Name Here"
+
+            end
+
+        end
+
+    end
+
+end
+
+
+playerGui.DescendantAdded:Connect(findGuiAndSetText)
+
+findGuiAndSetText()
+
+--[[Move anims]]
+
+--[[Move 1]]
+
+local animationId = 12273188754
+
+
+local player = game.Players.LocalPlayer
+
+local character = player.Character or player.CharacterAdded:Wait()
+
+local humanoid = character:WaitForChild("Humanoid")
+
+
+local function onAnimationPlayed(animationTrack)
+
+    if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+
+
+local p = game.Players.LocalPlayer
+
+local Humanoid = p.Character:WaitForChild("Humanoid")
+
+
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+
+    animTrack:Stop()
+
+end
+
+
+local AnimAnim = Instance.new("Animation")
+
+AnimAnim.AnimationId = "rbxassetid://13633468484"
+
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+
+
+local startTime = 0
+
+
+Anim:Play()
+
+Anim:AdjustSpeed(0.1)
+
+Anim.TimePosition = startTime
+
+Anim:AdjustSpeed(0.5) -- [[speed of the move anim]]
+
+
+    end
+
+end
+
+--[[End Of Move 1 Anim]]
+
+--[[Move 1 Miss Anim]]
+
+local animationId = 12272894215
+
+
+local player = game.Players.LocalPlayer
+
+local character = player.Character or player.CharacterAdded:Wait()
+
+local humanoid = character:WaitForChild("Humanoid")
+
+
+local function onAnimationPlayed(animationTrack)
+
+    if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+
+
+local p = game.Players.LocalPlayer
+
+local Humanoid = p.Character:WaitForChild("Humanoid")
+
+
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+
+    animTrack:Stop()
+
+end
+
+
+local AnimAnim = Instance.new("Animation")
+
+AnimAnim.AnimationId = "rbxassetid://13376869471"
+
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+
+
+local startTime = 0
+
+
+Anim:Play()
+
+Anim:AdjustSpeed(0.1)
+
+Anim.TimePosition = startTime
+
+Anim:AdjustSpeed(0.5) -- [[speed of the move anim]]
+
+
+    end
+
+end
+
+--[[End Of Move 1 Miss Anim]]
+
+--[[Move 2]]
+
+
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+
+
+local animationId = 12296113986
+
+
+local player = game.Players.LocalPlayer
+
+local character = player.Character or player.CharacterAdded:Wait()
+
+local humanoid = character:WaitForChild("Humanoid")
+
+
+local function onAnimationPlayed(animationTrack)
+
+    if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+
+
+local p = game.Players.LocalPlayer
+
+local Humanoid = p.Character:WaitForChild("Humanoid")
+
+
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+
+    animTrack:Stop()
+
+end
+
+
+local AnimAnim = Instance.new("Animation")
+
+AnimAnim.AnimationId = "rbxassetid://18182425133"
+
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+
+
+local startTime = 0
+
+
+Anim:Play()
+
+Anim:AdjustSpeed(0.7)
+
+Anim.TimePosition = startTime
+
+Anim:AdjustSpeed(0.7)
+
+    end
+
+end
+
+--[[End Of Move 2 Anim]]
+
+--[[Move 2 Miss Anim]]
+
+local animationId = 12296882427
+
+
+local player = game.Players.LocalPlayer
+
+local character = player.Character or player.CharacterAdded:Wait()
+
+local humanoid = character:WaitForChild("Humanoid")
+
+
+local function onAnimationPlayed(animationTrack)
+
+    if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+
+
+local p = game.Players.LocalPlayer
+
+local Humanoid = p.Character:WaitForChild("Humanoid")
+
+
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+
+    animTrack:Stop()
+
+end
+
+
+local AnimAnim = Instance.new("Animation")
+
+AnimAnim.AnimationId = "rbxassetid://rbxassetid://129651400898906"
+
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+
+
+local startTime = 0
+
+
+Anim:Play()
+
+Anim:AdjustSpeed(0.1)
+
+Anim.TimePosition = startTime
+
+Anim:AdjustSpeed(0.5) -- [[speed of the move anim]]
+
+
+    end
+
+end
+
+--[[End Of Move 2 Miss Anim]]
+
+--[[Move 3]]
+
+
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+
+
+local animationId = 12309835105
+
+
+local player = game.Players.LocalPlayer
+
+local character = player.Character or player.CharacterAdded:Wait()
+
+local humanoid = character:WaitForChild("Humanoid")
+
+
+local function onAnimationPlayed(animationTrack)
+
+    if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+
+
+local p = game.Players.LocalPlayer
+
+local Humanoid = p.Character:WaitForChild("Humanoid")
+
+
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+
+    animTrack:Stop()
+
+end
+
+
+local AnimAnim = Instance.new("Animation")
+
+AnimAnim.AnimationId = "rbxassetid://16431491215"
+
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+
+
+local startTime = 0.3
+
+
+Anim:Play()
+
+Anim:AdjustSpeed(0)
+
+Anim.TimePosition = startTime
+
+Anim:AdjustSpeed(0.8)
+
+
+delay(1.8, function()
+
+    Anim:Stop()
+
+end)
+
+
+    end
+
+end
+
+--[[End Of Move 3 Anim]]
+
+--[[Move 3 Miss Anim]]
+
+local animationId = 12307656616
+
+
+local player = game.Players.LocalPlayer
+
+local character = player.Character or player.CharacterAdded:Wait()
+
+local humanoid = character:WaitForChild("Humanoid")
+
+
+local function onAnimationPlayed(animationTrack)
+
+    if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+
+
+local p = game.Players.LocalPlayer
+
+local Humanoid = p.Character:WaitForChild("Humanoid")
+
+
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+
+    animTrack:Stop()
+
+end
+
+
+local AnimAnim = Instance.new("Animation")
+
+AnimAnim.AnimationId = "rbxassetid://13376869471"
+
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+
+
+local startTime = 0
+
+
+Anim:Play()
+
+Anim:AdjustSpeed(0.1)
+
+Anim.TimePosition = startTime
+
+Anim:AdjustSpeed(0.5) -- [[speed of the move anim]]
+
+
+    end
+
+end
+
+--[[End Of Move 3 Miss Anim]]
+
+--[[Move 4]]
+
+
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+
+
+local animationId = 13603396939
+
+
+local player = game.Players.LocalPlayer
+
+local character = player.Character or player.CharacterAdded:Wait()
+
+local humanoid = character:WaitForChild("Humanoid")
+
+
+local function onAnimationPlayed(animationTrack)
+
+    if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+
+local p = game.Players.LocalPlayer
+
+local Humanoid = p.Character:WaitForChild("Humanoid")
+
+
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+
+    animTrack:Stop()
+
+end
+
+
+local AnimAnim = Instance.new("Animation")
+
+AnimAnim.AnimationId = "rbxassetid://15145462680"
+
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+
+
+local startTime = 0
+
+
+Anim:Play()
+
+Anim:AdjustSpeed(0)
+
+Anim.TimePosition = startTime
+
+Anim:AdjustSpeed(1) -- [[speed of the move anim]]
+
+
+
+    end
+
+end
+
+--[[End Of Move 4 Anim]]
+
+--[[Move 4 Miss Anim]]
+
+local animationId = 12351854556
+
+
+local player = game.Players.LocalPlayer
+
+local character = player.Character or player.CharacterAdded:Wait()
+
+local humanoid = character:WaitForChild("Humanoid")
+
+
+local function onAnimationPlayed(animationTrack)
+
+    if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+
+
+local p = game.Players.LocalPlayer
+
+local Humanoid = p.Character:WaitForChild("Humanoid")
+
+
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+
+    animTrack:Stop()
+
+end
+
+
+local AnimAnim = Instance.new("Animation")
+
+AnimAnim.AnimationId = "rbxassetid://15128849047"
+
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+
+
+local startTime = 0
+
+
+Anim:Play()
+
+Anim:AdjustSpeed(0.1)
+
+Anim.TimePosition = startTime
+
+Anim:AdjustSpeed(0.5) -- [[speed of the move anim]]
+
+
+    end
+
+end
+
+--[[End Of Move 4 Miss Anim]]
+
+--[[Wall combo]]
+
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+
+local animationId = 16310343179
+
+
+local player = game.Players.LocalPlayer
+
+local character = player.Character or player.CharacterAdded:Wait()
+
+local humanoid = character:WaitForChild("Humanoid")
+
+
+local function onAnimationPlayed(animationTrack)
+
+    if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+
+local p = game.Players.LocalPlayer
+
+local Humanoid = p.Character:WaitForChild("Humanoid")
+
+
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+
+    animTrack:Stop()
+
+end
+
+
+local AnimAnim = Instance.new("Animation")
+
+AnimAnim.AnimationId = "rbxassetid://13633468484"
+
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+
+
+local startTime = 0.05
+
+
+Anim:Play()
+
+Anim:AdjustSpeed(0)
+
+Anim.TimePosition = startTime
+
+Anim:AdjustSpeed(0.7) -- [[speed of the move anim]]
+
+
+    end
+
+end
+
+--[[END OF WALL COMBO ANIM]]
+
+--[[Dash]]
+local animationId = 10479335397
+
+
+local player = game.Players.LocalPlayer
+
+local character = player.Character or player.CharacterAdded:Wait()
+
+local humanoid = character:WaitForChild("Humanoid")
+
+
+local function onAnimationPlayed(animationTrack)
+
+    if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+
+
+local p = game.Players.LocalPlayer
+
+local Humanoid = p.Character:WaitForChild("Humanoid")
+
+
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+
+    animTrack:Stop()
+
+end
+
+
+local AnimAnim = Instance.new("Animation")
+
+AnimAnim.AnimationId = "rbxassetid://17838006839" --[[i gave you cool one]]
+
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+
+
+local startTime = 0
+
+
+Anim:Play()
+
+Anim:AdjustSpeed(0.1)
+
+Anim.TimePosition = startTime
+
+Anim:AdjustSpeed(1) -- [[speed of the move anim]]
+
+
+    end
+
+end
+
+--[[End Of Dash Anim]]
+
+--[[Ult Activation]]
+
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+
+
+local animationId = 12342141464
+
+
+local player = game.Players.LocalPlayer
+
+local character = player.Character or player.CharacterAdded:Wait()
+
+local humanoid = character:WaitForChild("Humanoid")
+
+
+local function onAnimationPlayed(animationTrack)
+
+    if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+
+local p = game.Players.LocalPlayer
+
+local Humanoid = p.Character:WaitForChild("Humanoid")
+
+
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+
+    animTrack:Stop()
+
+end
+
+
+local AnimAnim = Instance.new("Animation")
+
+AnimAnim.AnimationId = "rbxassetid://15391323441"
+
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+
+
+local startTime = 0
+
+
+Anim:Play()
+
+Anim:AdjustSpeed(0)
+
+Anim.TimePosition = startTime
+
+Anim:AdjustSpeed(1.5) -- [[speed of the move anim]]
+
+
+
+    end
+
+end
+--[[END OF ULT ACTIVATION ANIM]]
+
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+-- Wait for character to load
+if not character then
+	warn("Character not found!")
+	return
+end
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local rightArm = character:FindFirstChild("Right Arm") -- R6 Right Arm
+
+if not rightArm then
+    warn("Right Arm not found! Ensure this is R6.")
+    return
+end
+
+-- Create the staff
+local Staff = Instance.new("Part")
+Staff.Name = "Staff"
+Staff.BottomSurface = Enum.SurfaceType.Smooth
+Staff.TopSurface = Enum.SurfaceType.Smooth
+Staff.Size = Vector3.new(4, 1, 2)
+Staff.Anchored = false -- Needs to move with arm
+Staff.CanCollide = false
+
+-- Mesh
+local Mesh = Instance.new("SpecialMesh")
+Mesh.Scale = Vector3.new(0.1, 0.1, 0.1)
+Mesh.MeshId = "rbxassetid://11495364982"
+Mesh.TextureId = "rbxassetid://8095081968"
+Mesh.MeshType = Enum.MeshType.FileMesh
+Mesh.Parent = Staff
+
+-- Motor6D to attach staff to right arm
+local Motor = Instance.new("Motor6D")
+Motor.Part0 = rightArm
+Motor.Part1 = Staff
+Motor.Parent = rightArm
+
+-- Adjust position & rotation
+Motor.C0 = CFrame.new(0, -1.3, -2)* CFrame.Angles(-500, math.rad(180), 0) -- Adjust as needed
+
+-- Parent staff to character
+Staff.Parent = character
+
+pcall(function() getgenv().Idle:Disconnect() end)
+
+local Test =  game.ReplicatedStorage.Emotes.VFX.VfxMods.FS.vfx.Aura.HumanoidRootPart.Torso
+
+local test = Test:Clone()
+test.Parent = game.Players.LocalPlayer.Character["HumanoidRootPart"]
+
+
+for _, child in ipairs(test:GetChildren()) do
+	if child:IsA("ParticleEmitter") then
+
+		child.Color = ColorSequence.new(Color3.new(0.211765, 0, 0.635294)) -- its set to one because its vfx lolo delete if u want
+		child:Emit(1)
+		child.Enabled = true
+	end
+end
+
+--[[Garou Color Changer !DELETE IF NOT NEEDED!]]
+
+--[[LEFT ARM COLORS]]
+
+local char = game.Players.LocalPlayer.Character
+getgenv().LArmCol = char['Left Arm'].ChildAdded:Connect(function(pp)
+	if pp.Name == 'WaterPalm' then
+		for i,v in pairs(pp:WaitForChild('ConstantEmit'):GetChildren()) do
+			v.Color =
+				ColorSequence.new{ColorSequenceKeypoint.new(0.00, 
+					Color3.fromRGB(85, 0, 255)), -- Change Color (Red, Green, Blue)
+					ColorSequenceKeypoint.new(1.00, 
+						Color3.fromRGB(255, 53, 107))} -- Change Color (Red, Green, Blue)
+		end
+
+		pp:WaitForChild('WaterTrail').Color = 
+			ColorSequence.new{ColorSequenceKeypoint.new(0.00, 
+				Color3.fromRGB(136, 51, 255)), -- Change Color (Red, Green, Blue)
+				ColorSequenceKeypoint.new(1.00, 
+					Color3.fromRGB(142, 90, 255))} -- Change Color (Red, Green, Blue)
+
+	end end)
+--[[RIGHT ARM colors]]
+
+getgenv().RArmCol = char['Right Arm'].ChildAdded:Connect(function(pp)
+	if pp.Name == 'WaterPalm' then
+		for i,v in pairs(pp:WaitForChild('ConstantEmit'):GetChildren()) do
+			v.Color =
+				ColorSequence.new{ColorSequenceKeypoint.new(0.00, 
+					Color3.fromRGB(85, 0, 255)), -- Change Color (Red, Green, Blue)
+					ColorSequenceKeypoint.new(1.00, 
+						Color3.fromRGB(85, 0, 255))} -- Change Color (Red, Green, Blue)
+		end
+		pp:WaitForChild('WaterTrail').Color = 
+			ColorSequence.new{ColorSequenceKeypoint.new(0.00, 
+				Color3.fromRGB(85, 0, 255)), -- Change Color (Red, Green, Blue) 
+				ColorSequenceKeypoint.new(1.00, 
+					Color3.fromRGB(85, 0, 255))} -- Change Color (Red, Green, Blue)
+
+	end end)
+
+--[[END OF GAROU COLORS]]
+
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Resonance"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack 
+
+getgenv().Idle = game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(v)
+    if v.Animation.AnimationId == "rbxassetid://16746843881" then
+        local Anim = Instance.new("Animation")
+        Anim.AnimationId = "rbxassetid://16746843881"
+        local k = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(Anim)
+        k:Play(.3)
+        k.Priority = Enum.AnimationPriority.Idle
+        k:AdjustSpeed(.6)
+        -- Loop the animation if needed
+        k.Looped = true
+
+        -- Keyframe positions (manually set to simulate keyframes 2, 3, and 4)
+        local keyframeTimes = {1, 2, 3}  -- Example keyframe times (you need to adjust this based on the animation)
+        local keyframeIndex = 1
+        local reverse = false  -- To control the direction of playback
+
+        -- Function to control the keyframe playback
+        local function controlKeyframes()
+            -- Get the current time of the animation
+            local currentTime = k.TimePosition
+
+            -- Check if we are at the target keyframe and reverse when necessary
+            if not reverse then
+                -- Move forward through keyframes
+                if currentTime >= keyframeTimes[keyframeIndex] then
+                    -- Move to the next keyframe
+                    keyframeIndex = keyframeIndex + 1
+                    if keyframeIndex > #keyframeTimes then
+                        keyframeIndex = #keyframeTimes
+                    end
+                end
+            else
+                -- Reverse through keyframes
+                if currentTime <= keyframeTimes[keyframeIndex] then
+                    -- Move to the previous keyframe
+                    keyframeIndex = keyframeIndex - 1
+                    if keyframeIndex < 1 then
+                        keyframeIndex = 1
+                    end
+                end
+            end
+
+            -- Set the time position to the keyframe time
+            k.TimePosition = keyframeTimes[keyframeIndex]
+        end
+
+        -- Function to switch between forward and reverse playback
+        local function toggleReverse()
+            reverse = not reverse
+        end
+
+        -- Set a heartbeat connection to control the keyframe playback
+        game:GetService("RunService").Heartbeat:Connect(function()
+            controlKeyframes()
+        end)
+
+        -- You can toggle the reverse whenever you want
+        toggleReverse()
+
+        -- Wait until the animation stops and stop it with a slight delay
+        v.Stopped:Wait()
+        k:Stop(.3)
+    end
+end)
+
+-- END OF SWORD AND IDLE
